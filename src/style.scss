@@ -47,3 +47,10 @@
 
 // Utility classes
 @import "../node_modules/bootstrap/scss/_utilities.scss";
+
+
+body {
+    background: url(./images/bodybg.jpg);
+    padding: 0px;
+    margin: 0px;
+}

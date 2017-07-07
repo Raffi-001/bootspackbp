@@ -2,11 +2,11 @@ import _ from 'lodash';
 import './style.scss';
 
 function component() {
-    var element = document.createElement('div');
+    //var element = document.createElement('div');
 
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+    //element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 
-    return element;
+    //return element;
 }
 
 document.body.appendChild(component());
