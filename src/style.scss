@@ -1,12 +1,12 @@
+// Core functions
+@import "../node_modules/bootstrap/scss/_functions.scss";
 // Overriding the core variables in our source code
 @import "variables.scss";
 
-
-// Core mixins
 @import "../node_modules/bootstrap/scss/_mixins.scss";
 
+@import "../node_modules/bootstrap/scss/_root.scss";
 // Reset and dependencies
-@import "../node_modules/bootstrap/scss/_normalize.scss";
 @import "../node_modules/bootstrap/scss/_print.scss";
 
 // Core CSS
@@ -36,7 +36,6 @@
 @import "../node_modules/bootstrap/scss/_progress.scss";
 @import "../node_modules/bootstrap/scss/_media.scss";
 @import "../node_modules/bootstrap/scss/_list-group.scss";
-@import "../node_modules/bootstrap/scss/_responsive-embed.scss";
 @import "../node_modules/bootstrap/scss/_close.scss";
 
 // Components w/ JavaScript
