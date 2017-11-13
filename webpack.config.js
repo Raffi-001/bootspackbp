@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var HtmlWebpackLayoutPlugin = require('html-webpack-layout-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
@@ -32,10 +33,12 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({
+            layout: path.join(__dirname, 'src/layout.html'),
             title: 'Output Management',
             filename: 'index.html',
             template: 'src/index.html'
         }),
+        new HtmlWebpackLayoutPlugin(),
         new ExtractTextPlugin("style.css"),
         new webpack.ProvidePlugin({
             $: "jquery",
