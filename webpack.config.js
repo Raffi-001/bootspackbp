@@ -33,11 +33,19 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({
-            layout: path.join(__dirname, 'src/layout.html'),
+            layout: path.join(__dirname, 'src/layouts/layout.html'),
             title: 'Output Management',
             filename: 'index.html',
-            template: 'src/index.html'
+            template: 'src/pages/index.html'
         }),
+
+        new HtmlWebpackPlugin({
+            layout: path.join(__dirname, 'src/layouts/layout.html'),
+            title: 'About',
+            filename: 'about.html',
+            template: 'src/pages/about.html'
+        }),
+
         new HtmlWebpackLayoutPlugin(),
         new ExtractTextPlugin("style.css"),
         new webpack.ProvidePlugin({
